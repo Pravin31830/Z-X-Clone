@@ -27,7 +27,6 @@ const useFollow=()=>{
             queryclient.invalidateQueries({queryKey:['suggestedUser']}),
             queryclient.invalidateQueries({queryKey:['authUser']}),
             ])
-            toast.success("followed");
         },
         onError:()=>{
             toast.error(error.message)
